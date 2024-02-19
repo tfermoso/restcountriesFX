@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.ceica.restcountriesfx.RestCountriesController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="comboRegions" layoutX="43.0" layoutY="49.0" prefWidth="150.0" promptText="Regions" />
+      <TableView fx:id="tblCountries" layoutX="37.0" layoutY="115.0" prefHeight="355.0" prefWidth="248.0">
+        <columns>
+          <TableColumn fx:id="countryNameColumn" prefWidth="244.80001068115234" text="Country" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imgFlag" fitHeight="184.0" fitWidth="382.0" layoutX="372.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtCountryName" layoutX="372.0" layoutY="312.0" prefHeight="26.0" prefWidth="233.0" />
+      <TextField fx:id="txtCountryPopulation" layoutX="373.0" layoutY="353.0" prefHeight="26.0" prefWidth="234.0" />
+      <TextField fx:id="txtCountryCapital" layoutX="374.0" layoutY="394.0" prefHeight="26.0" prefWidth="234.0" />
+   </children>
+</AnchorPane>
