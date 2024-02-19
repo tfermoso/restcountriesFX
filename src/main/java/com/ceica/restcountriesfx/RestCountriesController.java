@@ -3,7 +3,7 @@ package com.ceica.restcountriesfx;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class RestCountriesController {
     @FXML
     private Label welcomeText;
 
