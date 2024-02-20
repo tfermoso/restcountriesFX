@@ -44,6 +44,10 @@ public class RestCountriesController {
                 tblCountries.setItems(observableList);
             }
         });
+        tblCountries.setOnMouseClicked(e->{
+            String countryName=tblCountries.getSelectionModel().getSelectedItem().getName();
+            CountryDTO countryDTO=fakeRestCountriesService.getCountryByName(countryName);
+        });
         countryNameColumn.setCellValueFactory(cell -> new SimpleStringProperty(cell.getValue().getName()));
     }
 

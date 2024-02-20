@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Mostrando paises por region">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Función clear">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/FakeRestCountriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/FakeRestCountriesService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708444776617</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Función clear">
+      <option name="closed" value="true" />
+      <created>1708446043333</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708446043333</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,6 +142,7 @@
     <MESSAGE value="Creando Vista" />
     <MESSAGE value="Mostrando las regiones" />
     <MESSAGE value="Mostrando paises por region" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mostrando paises por region" />
+    <MESSAGE value="Función clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="Función clear" />
   </component>
 </project>
