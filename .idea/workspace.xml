@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Obtener Pais seleccionado">
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Completamos vista de RestContryFX">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708446828057</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Completamos vista de RestContryFX">
+      <option name="closed" value="true" />
+      <created>1708449907348</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708449907348</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,6 +162,7 @@
     <MESSAGE value="Mostrando paises por region" />
     <MESSAGE value="Función clear" />
     <MESSAGE value="Obtener Pais seleccionado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Obtener Pais seleccionado" />
+    <MESSAGE value="Completamos vista de RestContryFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completamos vista de RestContryFX" />
   </component>
 </project>
