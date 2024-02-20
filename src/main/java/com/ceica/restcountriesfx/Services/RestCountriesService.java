@@ -1,5 +1,6 @@
 package com.ceica.restcountriesfx.Services;
-
+import com.google.gson.Gson;
+import com.ceica.restcountriesfx.Models.CountryDAO;
 import com.ceica.restcountriesfx.Models.CountryDTO;
 
 import java.io.BufferedReader;
@@ -8,14 +9,32 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class RestCountriesService implements IRestCountries {
     @Override
     public String[] getRegions() {
-        String url = "https://restcountries.com/v3.1/All";
-
-        return new String[0];
+        List<String> regions=new ArrayList<>();
+        String url = "https://restcountries.com/v3.1/all";
+        try {
+            String datos=getDataUrl(url);
+            Gson gson=new Gson();
+            CountryDAO[] objects= gson.fromJson(datos,CountryDAO[].class);
+            for (CountryDAO countryDAO:objects){
+                if(! regions.contains(countryDAO.region)){
+                    regions.add(countryDAO.region);
+                }
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String[] regionArray=new String[regions.size()];
+        for (int i = 0; i < regions.size(); i++) {
+            regionArray[i]=regions.get(i);
+        }
+        return regionArray;
     }
 
     @Override
