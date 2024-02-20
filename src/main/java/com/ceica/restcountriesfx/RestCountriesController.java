@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
@@ -47,6 +48,12 @@ public class RestCountriesController {
         tblCountries.setOnMouseClicked(e->{
             String countryName=tblCountries.getSelectionModel().getSelectedItem().getName();
             CountryDTO countryDTO=fakeRestCountriesService.getCountryByName(countryName);
+            txtCountryName.setText(countryDTO.getName());
+            txtCountryCapital.setText(countryDTO.getCapital());
+            txtCountryCoin.setText(countryDTO.getCoin());
+            txtCountryPopulation.setText(String.valueOf(countryDTO.getPopulation()));
+            Image imgen=new Image(countryDTO.getFlag());
+            imgFlag.setImage(imgen);
         });
         countryNameColumn.setCellValueFactory(cell -> new SimpleStringProperty(cell.getValue().getName()));
     }
@@ -56,5 +63,10 @@ public class RestCountriesController {
         observableList.clear();
         tblCountries.refresh();
         comboRegions.getSelectionModel().clearSelection();
+        txtCountryName.setText("");
+        txtCountryCoin.setText("");
+        txtCountryPopulation.setText("");
+        txtCountryCapital.setText("");
+        imgFlag.setImage(null);
     }
 }
