@@ -14,35 +14,43 @@ import javafx.scene.text.Text;
 import java.lang.annotation.Target;
 
 public class RestCountriesController {
-  @FXML
-  protected ComboBox comboRegions;
-  @FXML
+    @FXML
+    protected ComboBox comboRegions;
+    @FXML
     protected TableView<CountryDTO> tblCountries;
-  @FXML
-    protected TableColumn<CountryDTO,String> countryNameColumn;
-  @FXML
+    @FXML
+    protected TableColumn<CountryDTO, String> countryNameColumn;
+    @FXML
     protected ImageView imgFlag;
-  @FXML
+    @FXML
     protected TextField txtCountryName;
-  @FXML
+    @FXML
     protected TextField txtCountryPopulation;
-  @FXML
+    @FXML
     protected TextField txtCountryCapital;
-  @FXML
+    @FXML
     protected TextField txtCountryCoin;
-@FXML
-  public void initialize(){
-  FakeRestCountriesService fakeRestCountriesService=new FakeRestCountriesService();
-    comboRegions.getItems().addAll(fakeRestCountriesService.getRegions());
-    comboRegions.setOnAction(e->{
-      String region=comboRegions.getSelectionModel().getSelectedItem().toString();
-      ObservableList<CountryDTO> observableList= FXCollections.observableArrayList();
-      observableList.addAll(fakeRestCountriesService.getCoutriesByRegion(region));
-      tblCountries.setItems(observableList);
-    });
-    countryNameColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getName()));
-  }
-  @FXML
+    private ObservableList<CountryDTO> observableList = FXCollections.observableArrayList();
+
+    @FXML
+    public void initialize() {
+        FakeRestCountriesService fakeRestCountriesService = new FakeRestCountriesService();
+        comboRegions.getItems().addAll(fakeRestCountriesService.getRegions());
+        comboRegions.setOnAction(e -> {
+            if (comboRegions.getSelectionModel().getSelectedItem() != null) {
+                String region = comboRegions.getSelectionModel().getSelectedItem().toString();
+                observableList.clear();
+                observableList.addAll(fakeRestCountriesService.getCoutriesByRegion(region));
+                tblCountries.setItems(observableList);
+            }
+        });
+        countryNameColumn.setCellValueFactory(cell -> new SimpleStringProperty(cell.getValue().getName()));
+    }
+
+    @FXML
     public void btnClear(ActionEvent actionEvent) {
+        observableList.clear();
+        tblCountries.refresh();
+        comboRegions.getSelectionModel().clearSelection();
     }
 }
