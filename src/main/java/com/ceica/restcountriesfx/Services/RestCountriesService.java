@@ -2,6 +2,7 @@ package com.ceica.restcountriesfx.Services;
 import com.google.gson.Gson;
 import com.ceica.restcountriesfx.Models.CountryDAO;
 import com.ceica.restcountriesfx.Models.CountryDTO;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,7 +40,21 @@ public class RestCountriesService implements IRestCountries {
 
     @Override
     public List<CountryDTO> getCoutriesByRegion(String region) {
-        return null;
+        String url="https://restcountries.com/v3.1/region/"+region;
+        List<CountryDTO> countryDTOList=new ArrayList<>();
+        try {
+            String datos=getDataUrl(url);
+            Gson gson=new Gson();
+            List<CountryDAO> objects= gson.fromJson(datos,new TypeToken<List<CountryDAO>>(){}.getType());
+
+            for (CountryDAO countryDAO:objects){
+                countryDTOList.add(CountryDTO.from(countryDAO));
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return countryDTOList;
     }
 
     @Override
