@@ -9,6 +9,6 @@ public class CountryDAO {
     public int population;
     public Flag flags;
     public Map<String, Currency> currencies;
-
+    public String fifa;
 }
 

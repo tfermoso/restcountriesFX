@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="RestCountriesService getCountriesByRegion">
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="getCountryByName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/FakeRestCountriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/FakeRestCountriesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/IRestCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/IRestCountries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.RestCountriesApplication.executor": "Debug",
+    "Application.RestCountriesApplication.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -189,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708458165992</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="getCountryByName">
+      <option name="closed" value="true" />
+      <created>1708531116554</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708531116554</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -206,7 +218,8 @@
     <MESSAGE value="getDataURL" />
     <MESSAGE value="RestCountriesService getRegions" />
     <MESSAGE value="RestCountriesService getCountriesByRegion" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestCountriesService getCountriesByRegion" />
+    <MESSAGE value="getCountryByName" />
+    <option name="LAST_COMMIT_MESSAGE" value="getCountryByName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -218,5 +231,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="tblCountries.getSelectionModel().getSelectedItem()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

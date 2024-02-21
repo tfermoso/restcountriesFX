@@ -74,6 +74,23 @@ public class RestCountriesService implements IRestCountries {
         return countryDTO;
     }
 
+    @Override
+    public CountryDTO getCountryByFifa(String fifa) {
+
+        String url="https://restcountries.com/v3.1/alpha/"+fifa;
+        CountryDTO countryDTO=null;
+        try {
+            String datos=getDataUrl(url);
+            Gson gson=new Gson();
+            CountryDAO[] countryDAO=gson.fromJson(datos,CountryDAO[].class);
+            countryDTO=CountryDTO.from(countryDAO[0]);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return countryDTO;
+    }
+
     private String getDataUrl(String url) throws IOException {
         URL obj = new URL(url);
         // Abrimos una conexión HTTP

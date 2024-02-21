@@ -34,4 +34,9 @@ public class FakeRestCountriesService implements IRestCountries {
         countryDTO.setFlag("https://flagcdn.com/w320/es.png");
         return countryDTO;
     }
+
+    @Override
+    public CountryDTO getCountryByFifa(String fifa) {
+        return null;
+    }
 }
