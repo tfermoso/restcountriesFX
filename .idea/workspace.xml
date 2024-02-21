@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Añadimos labels a la vista">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" afterDir="false" />
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Mover cursor por la tableView">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -62,7 +69,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "httpclient",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -219,8 +226,27 @@
       <option name="project" value="LOCAL" />
       <updated>1708535764890</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Mover cursor por la tableView">
+      <option name="closed" value="true" />
+      <created>1708536571644</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708536571644</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="RestCountriesFX" />
@@ -239,7 +265,8 @@
     <MESSAGE value="getCountryByName" />
     <MESSAGE value="getCountryByCca3" />
     <MESSAGE value="Añadimos labels a la vista" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadimos labels a la vista" />
+    <MESSAGE value="Mover cursor por la tableView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mover cursor por la tableView" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,11 +276,22 @@
           <line>50</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesApplication.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="tblCountries.getSelectionModel().getSelectedItem()" language="JAVA" />
+        <watch expression="in.read()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
