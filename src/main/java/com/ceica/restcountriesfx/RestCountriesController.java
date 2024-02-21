@@ -48,8 +48,8 @@ public class RestCountriesController {
             }
         });
         tblCountries.setOnMouseClicked(e->{
-            String countryFifa=tblCountries.getSelectionModel().getSelectedItem().getFifa();
-            CountryDTO countryDTO=fakeRestCountriesService.getCountryByFifa(countryFifa);
+            String countrycca3=tblCountries.getSelectionModel().getSelectedItem().getCca3();
+            CountryDTO countryDTO=fakeRestCountriesService.getCountryByCca3(countrycca3);
             txtCountryName.setText(countryDTO.getName());
             txtCountryCapital.setText(countryDTO.getCapital());
             txtCountryCoin.setText(countryDTO.getCoin());

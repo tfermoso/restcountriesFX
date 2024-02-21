@@ -75,9 +75,9 @@ public class RestCountriesService implements IRestCountries {
     }
 
     @Override
-    public CountryDTO getCountryByFifa(String fifa) {
+    public CountryDTO getCountryByCca3(String cca3) {
 
-        String url="https://restcountries.com/v3.1/alpha/"+fifa;
+        String url="https://restcountries.com/v3.1/alpha/"+cca3;
         CountryDTO countryDTO=null;
         try {
             String datos=getDataUrl(url);

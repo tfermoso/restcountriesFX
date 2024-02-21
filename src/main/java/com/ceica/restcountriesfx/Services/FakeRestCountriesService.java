@@ -36,7 +36,7 @@ public class FakeRestCountriesService implements IRestCountries {
     }
 
     @Override
-    public CountryDTO getCountryByFifa(String fifa) {
+    public CountryDTO getCountryByCca3(String fifa) {
         return null;
     }
 }

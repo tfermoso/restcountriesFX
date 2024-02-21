@@ -7,7 +7,7 @@ public class CountryDTO {
     private String capital;
     private String coin;
     private int population;
-    private String fifa;
+    private String cca3;
 
     public CountryDTO() {
     }
@@ -27,7 +27,7 @@ public class CountryDTO {
             coin=countryDAO.currencies.get(keyCurrency).name;
         }
         countryDTO.setCoin(coin);
-        countryDTO.setFifa(countryDAO.fifa);
+        countryDTO.setCca3(countryDAO.cca3);
         return countryDTO;
     }
     public String getName() {
@@ -54,12 +54,12 @@ public class CountryDTO {
         this.region = region;
     }
 
-    public String getFifa() {
-        return fifa;
+    public String getCca3() {
+        return cca3;
     }
 
-    public void setFifa(String fifa) {
-        this.fifa = fifa;
+    public void setCca3(String cca3) {
+        this.cca3 = cca3;
     }
 
     public String getCapital() {
