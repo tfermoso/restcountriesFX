@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="getCountryByName">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/IRestCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/IRestCountries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" afterDir="false" />
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="getCountryByCca3">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/restcountriesfx/restcountries-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/restcountriesfx/restcountries-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708533204885</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="getCountryByCca3">
+      <option name="closed" value="true" />
+      <created>1708535399854</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708535399854</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,7 +229,8 @@
     <MESSAGE value="RestCountriesService getRegions" />
     <MESSAGE value="RestCountriesService getCountriesByRegion" />
     <MESSAGE value="getCountryByName" />
-    <option name="LAST_COMMIT_MESSAGE" value="getCountryByName" />
+    <MESSAGE value="getCountryByCca3" />
+    <option name="LAST_COMMIT_MESSAGE" value="getCountryByCca3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
