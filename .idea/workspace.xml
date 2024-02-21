@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="RestCountriesService getRegions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/Country.java" afterDir="false" />
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="RestCountriesService getCountriesByRegion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/CountryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/Currencies.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Models/Currency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/Services/RestCountriesService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.RestCountriesApplication.executor": "Run",
+    "Application.RestCountriesApplication.executor": "Debug",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -185,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708454918510</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="RestCountriesService getCountriesByRegion">
+      <option name="closed" value="true" />
+      <created>1708458165992</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708458165992</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,15 +205,16 @@
     <MESSAGE value="Creamos clase CountryDAO" />
     <MESSAGE value="getDataURL" />
     <MESSAGE value="RestCountriesService getRegions" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestCountriesService getRegions" />
+    <MESSAGE value="RestCountriesService getCountriesByRegion" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestCountriesService getCountriesByRegion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="6" />
+          <line>50</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
