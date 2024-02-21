@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="getCountryByCca3">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/restcountriesfx/restcountries-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/restcountriesfx/restcountries-view.fxml" afterDir="false" />
+    <list default="true" id="13943341-f2d9-42f2-9704-b0b4a5f5b3a0" name="Changes" comment="Añadimos labels a la vista">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/restcountriesfx/RestCountriesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708535399854</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Añadimos labels a la vista">
+      <option name="closed" value="true" />
+      <created>1708535764890</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708535764890</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -230,7 +238,8 @@
     <MESSAGE value="RestCountriesService getCountriesByRegion" />
     <MESSAGE value="getCountryByName" />
     <MESSAGE value="getCountryByCca3" />
-    <option name="LAST_COMMIT_MESSAGE" value="getCountryByCca3" />
+    <MESSAGE value="Añadimos labels a la vista" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadimos labels a la vista" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
